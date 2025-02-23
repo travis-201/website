@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>arch wifi</title>
+</head>
+
+
+<body style="background-color: grey;">
+<h1 style="text-align: center;">how to connect to wifi on arch linux</h1>
+<hr>
+<p>Step 1: Check if Your Network Interface is Detected</p>
+<p> run (iwctl device list)</p>
+<p>Step 2: Start the iwctl Utility</p>
+<p>run (iwctl)</p>
+<p>Step 3: Scan for Available Networks</p>
+<p>run (station wlan0 scan)</p>
+<p>and run (station wlan0 get-networks)</p>
+<p>Replace wlan0 with your actual Wi-Fi interface name.</p>
+<p>Step 4: Connect to a Wi-Fi Network</p>
+<p> run (station wlan0 connect "Your_WiFi_Name")</p>
+<p>If your network has a password, you will be prompted to enter it</p>
+<p>then type exit to leave the iwctl utility</p>
+<p>Check internet connectivity</p>
+<p>run (ping google.com)</p>
+<p>or open a browser all done :)</p>
+<hr>
+
+</body>
+
+</html>
